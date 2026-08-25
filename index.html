@@ -35,7 +35,7 @@
 <ul>
   <li><strong>如何還原購買？</strong>　開啟 App →「設定 → 升級 / 支持」→ 點「還原購買」；或在付費提示頁點「還原購買」。</li>
   <li><strong>如何取消訂閱？</strong>　訂閱由 Apple 管理：iPhone「設定 → 你的 Apple ID → 訂閱項目」中即可取消。</li>
-  <li><strong>資料存在哪裡？</strong>　你的任務與記錄目前僅儲存在裝置本地，不會上傳伺服器。</li>
+  <li><strong>資料存在哪裡？</strong>　你的任務、待辦、未來目標與計時記錄僅儲存在裝置本地（SQLite），不會上傳伺服器。只有兩種資料會離開裝置：<strong>你主動填寫並送出的首發問卷回答</strong>（存於 Firebase Firestore）與<strong>崩潰報告</strong>（送至 Firebase Crashlytics，不與你的帳號關聯）。詳見<a href="privacy.html">隱私政策</a>。</li>
   <li><strong>退款？</strong>　付款與退款由 Apple 處理，請透過 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 申請。</li>
 </ul>
 
@@ -61,7 +61,7 @@
 <ul>
   <li><strong>購入の復元方法は？</strong>　アプリを開き「設定 → アップグレード / サポート」→「購入を復元」をタップ。</li>
   <li><strong>サブスクリプションの解約方法は？</strong>　サブスクリプションはAppleが管理します。iPhoneの「設定 → Apple ID → サブスクリプション」から解約できます。</li>
-  <li><strong>データはどこに保存されますか？</strong>　タスクや記録は現在、端末内にのみ保存され、サーバーには送信されません。</li>
+  <li><strong>データはどこに保存されますか？</strong>　タスク・チェックリスト・長期目標・計測記録は端末内（SQLite）にのみ保存され、サーバーには送信されません。端末外に送信されるのは 2 種類のみです：<strong>お客様が自ら入力・送信されたローンチアンケートの回答</strong>（Firebase Firestore に保存）と<strong>クラッシュレポート</strong>（Firebase Crashlytics へ送信・アカウントとは紐付けません）。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</li>
   <li><strong>返金について</strong>　支払い・返金はAppleが処理します。<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> よりお申し込みください。</li>
 </ul>
 
