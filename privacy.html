@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Murmuration 隱私政策 / プライバシーポリシー</title>
+<title>Murmuration 隱私政策 / Privacy Policy / プライバシーポリシー / Politique de confidentialité / 개인정보 처리방침</title>
 <style>
   :root { color-scheme: light dark; }
   body { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px;
-         font-family: -apple-system, "Helvetica Neue", "PingFang TC", "Hiragino Sans", sans-serif;
+         font-family: -apple-system, "Helvetica Neue", "PingFang TC", "Hiragino Sans", "Apple SD Gothic Neo", sans-serif;
          line-height: 1.75; color: #1a1a1a; background: #fff; }
   @media (prefers-color-scheme: dark){ body{ color:#e8e8e8; background:#161616 } a{ color:#7ab7ff } }
   h1 { font-size: 1.5rem; margin-bottom: .2em; }
@@ -16,121 +16,185 @@
   ul { padding-left: 1.2em; }
   hr { border: none; border-top: 1px solid #ccc; margin: 3em 0; }
   .lang { color:#888; font-size:.85rem; letter-spacing:.1em; text-transform:uppercase; margin-top:2em;}
+  nav.langs { font-size:.9rem; display:flex; flex-wrap:wrap; gap:.4em 1em; border-bottom:1px solid #ccc; padding-bottom:.8em; }
   a { color: #0a6; }
 </style>
 </head>
 <body>
-
+<nav class="langs"><a href="#zh">中文</a><a href="#en">English</a><a href="#ja">日本語</a><a href="#fr">Français</a><a href="#ko">한국어</a></nav>
+<section id="zh" lang="zh-Hant">
 <p class="lang">中文</p>
 <h1>Murmuration 隱私政策</h1>
-<p class="updated">最後更新：2026 年 8 月</p>
-
-<p>感謝你使用 Murmuration。本政策說明我們收集哪些資料、如何使用，以及你的權利。</p>
-
-<h2>一、我們收集的資料</h2>
-<p><strong>1. 你主動提供的資料</strong></p>
-<ul>
-  <li>用戶名稱（選填，僅用於 App 內顯示問候語）</li>
-  <li>任務名稱、待辦事項、未來目標</li>
-  <li>計時記錄（開始時間、結束時間、持續時長）</li>
-  <li>專注程度與阻力程度（1–9 自評數值）</li>
-  <li>你留給自己的筆記（TaskNote）、方法提醒（TaskReminder）、習慣記錄（TaskHabit）</li>
-  <li><strong>首發問卷的回答</strong>（僅在你主動填寫時）：你選擇或填寫的答案內容</li>
-</ul>
-<p><strong>2. 自動收集的資料</strong></p>
-<ul>
-  <li><strong>崩潰報告</strong>：App 發生錯誤而中止時，會將錯誤發生的位置與當下的裝置狀態送到 Firebase Crashlytics，供我們修正問題。<strong>這份報告不包含你的任務、筆記或計時內容，也不附帶你的帳號識別資訊。</strong></li>
-</ul>
-<p>除上述之外，本 App <strong>不</strong>收集位置資料、<strong>不</strong>做使用行為分析、<strong>不</strong>使用廣告追蹤，也<strong>不</strong>使用任何廣告或分析 SDK。</p>
-
-<h2>二、資料儲存位置</h2>
-<p>不同類型的資料存放在不同地方：</p>
-<ul>
-  <li><strong>你的任務、待辦、未來目標、計時記錄、筆記、提醒、習慣記錄</strong>：儲存於你的裝置本地（SQLite 資料庫），<strong>不會上傳到伺服器</strong>。</li>
-  <li><strong>首發問卷的回答</strong>：儲存於 Google Cloud Firestore，與你的帳號識別碼關聯。<strong>只有在你主動填寫並送出時才會上傳。</strong></li>
-  <li><strong>崩潰報告</strong>：送至 Firebase Crashlytics，不與你的帳號關聯。</li>
-  <li><strong>購買與解鎖狀態</strong>：由 Apple 與 RevenueCat 處理。</li>
-</ul>
-
-<h2>三、第三方服務</h2>
-<p>本 App 可能使用以下第三方服務：</p>
-<ul>
-  <li>Apple 登入 / Google 登入（帳號驗證，經 Firebase Authentication）：僅用於帳號識別；Apple 登入時你可選擇隱藏電子郵件。詳見 Apple / Google 隱私政策。</li>
-  <li>Apple App 內購買與 RevenueCat（購買處理，僅在你購買 Pro 時）：處理購買憑證與解鎖狀態，不涉及你的任務內容資料。</li>
-  <li>Google Cloud Firestore（僅在你主動填寫首發問卷時）：保存你的問卷回答，用於改進 Murmuration。</li>
-  <li>Firebase Crashlytics（崩潰報告）：接收 App 中止時的錯誤資訊，用於修正問題；不與你的帳號關聯。</li>
-  <li>你的任務、筆記、計時內容<strong>僅儲存在裝置本地</strong>，不上傳至任何伺服器。</li>
-</ul>
-<p>本 App 不包含廣告，不向任何第三方出售你的個人資料。</p>
-
-<h2>四、資料刪除</h2>
-<p>你可以隨時透過 App 內的「設定 → 刪除帳號」刪除你的帳號。<strong>刪除帳號時，我們會一併刪除保存在 Firestore 的問卷回答。</strong></p>
-<p>你的任務、筆記與計時記錄儲存於裝置本地，<strong>不會因為刪除帳號而消失</strong>；若要完全清除本地資料，請解除安裝本 App。</p>
-
-<h2>五、未成年人</h2>
-<p>本 App 不特別針對未成年人設計，亦不主動收集未成年人的個人資料。</p>
-
-<h2>六、政策變更</h2>
-<p>如本政策有重大變更，我們將透過 App 內通知告知。繼續使用 App 即表示你同意更新後的政策。</p>
-
-<h2>七、聯絡我們</h2>
-<p>如有任何隱私相關問題，請聯絡：<a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
-
+<p class="updated">最後更新：2026 年 9 月</p>
+<p>感謝你使用 Murmuration。本政策說明我們收集哪些資料、為什麼收集、資料去哪裡、保存多久，以及你的權利。</p>
+<h2>一、誰負責你的資料</h2>
+<p>Murmuration 由 YuChin Chen（台灣的個人開發者）開發，負責處理你的個人資料，同時也是隱私聯絡窗口。聯絡方式：<a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a>。</p>
+<h2>二、我們收集的資料</h2>
+<p><strong>只留在你手機上的資料</strong>（我們不會收到）：</p>
+<ul><li>用戶名稱（選填，僅用於 App 內顯示問候語）</li><li>任務名稱、待辦事項、未來目標</li><li>計時記錄（開始時間、結束時間、持續時長）</li><li>專注程度與阻力程度（1–9 自評數值）</li><li>你留給自己的任務筆記、提醒、留意（容易犯的習慣與克服次數）</li></ul>
+<p><strong>會離開手機的資料</strong>：</p>
+<ul><li><strong>登入資料</strong>（僅在你用 Apple 或 Google 登入時）：帳號識別碼，以及 Apple 或 Google 提供的電子郵件與姓名（使用 Apple 登入時你可以選擇隱藏電子郵件）。</li><li><strong>首發問卷的回答</strong>（僅在你主動填寫時），與你的帳號識別碼關聯。</li><li><strong>崩潰報告</strong>：App 發生錯誤而中止時，錯誤發生的位置與當下的裝置狀態（例如機型、系統版本）。不包含你的任務、筆記或計時內容，也不與你的帳號關聯。</li><li><strong>購買資料</strong>：購買憑證與解鎖狀態，與 App 使用者識別碼關聯（有登入時是帳號識別碼，否則是隨機識別碼）。</li></ul>
+<p>本 App 不收集位置資料、不做使用行為分析、不使用廣告追蹤，也不包含任何廣告或分析 SDK。登入資料與問卷回答都是選擇性提供；不提供仍可不登入使用本 App（只是無法參加問卷活動）。</p>
+<h2>三、使用目的與法律依據</h2>
+<ul><li>登入資料：建立與識別你的帳號、顯示登入狀態——提供你要求的帳號功能所必需（履行契約）。</li><li>問卷回答：改進 Murmuration、發放問卷獎勵——依你的同意，你可以隨時撤回。</li><li>崩潰報告：找出並修正錯誤——基於維持 App 正常運作的正當利益。</li><li>購買資料：處理購買與解鎖完整版——履行契約。</li></ul>
+<h2>四、受託處理者</h2>
+<ul><li>Google LLC——Firebase Authentication（登入）、Cloud Firestore（問卷回答）、Firebase Crashlytics（崩潰報告）</li><li>RevenueCat, Inc.——購買處理與解鎖狀態</li><li>Apple Inc.——Apple 登入與 App 內購買</li></ul>
+<p>以上服務依其條款與隱私政策代我們處理資料。我們不出售你的個人資料，除法律要求外也不提供給其他任何人。</p>
+<h2>五、跨境傳輸</h2>
+<p>我們位於台灣，上述服務主要在美國儲存與處理資料。當你登入、送出問卷、購買，或 App 發生崩潰時，相關資料（見第二條）會經加密連線傳送到這些服務的伺服器，並依第六條的期間保存。這些傳輸依賴各服務提供者的標準資料保護契約承諾。若你不希望資料跨境傳輸，可以不登入、不送出問卷；App 的核心功能仍會在你的手機上正常運作。</p>
+<h2>六、保存期間</h2>
+<ul><li>登入資料與問卷回答：保存到你刪除帳號為止。刪除帳號時，我們會立即刪除你的問卷回答與登入帳號。</li><li>崩潰報告：由 Firebase Crashlytics 依 Google 設定的有限期間保存，期滿自動刪除。</li><li>購買資料：由 Apple 與 RevenueCat 依購買紀錄與法律義務（例如會計）所需保存。</li><li>手機上的資料：保存到你自行刪除或解除安裝 App 為止；刪除帳號不會刪除這些資料。</li></ul>
+<h2>七、你的權利</h2>
+<p>依你所在地區的法律，你可能有權：查詢或請求閱覽、請求製給複製本、補充或更正、請求停止收集處理或利用、請求刪除，以及撤回同意。行使上述權利請寄信到上方信箱，我們會在適用法律規定的期限內回覆。你也可以在 App 內「設定 → 刪除帳號」自行刪除帳號。</p>
+<p>你也有權向所在地的個人資料保護主管機關申訴（例如日本個人情報保護委員會、韓國個人情報保護委員會、瑞士聯邦資料保護暨資訊委員）。</p>
+<h2>八、安全措施</h2>
+<p>App 傳送的資料都經過加密連線。我們沒有自己的伺服器；雲端資料存放在第四條的服務中，你的問卷回答只有你的帳號與我們能存取，我們也盡量把收集的資料量降到最低。</p>
+<h2>九、未成年人</h2>
+<p>本 App 不特別針對兒童設計。若你在韓國未滿 14 歲，或未滿你所在國家的數位同意年齡（例如 13 或 16 歲），請在父母或監護人同意後再登入或送出問卷。若我們發現在未取得必要同意下收集了此類資料，會予以刪除。</p>
+<h2>十、政策變更</h2>
+<p>本政策如有重大變更，我們會在生效前於 App 內通知。依法需要你同意的變更，我們會徵求你的同意。</p>
+<h2>十一、聯絡我們</h2>
+<p>隱私相關問題或請求：<a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
+</section>
 <hr>
-
+<section id="en" lang="en">
+<p class="lang">English</p>
+<h1>Murmuration Privacy Policy</h1>
+<p class="updated">Last updated: September 2026</p>
+<p>Thank you for using Murmuration. This policy explains what data we collect, why, where it goes, how long we keep it, and your rights.</p>
+<h2>1. Who is responsible for your data</h2>
+<p>Murmuration is developed by YuChin Chen, an individual developer based in Taiwan, who is responsible for handling your personal data (the "controller") and is also the privacy contact person. Contact: <a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a>.</p>
+<h2>2. Data we collect</h2>
+<p><strong>Data that stays on your device</strong> (we never receive it):</p>
+<ul><li>A display name (optional; only used for the greeting in the App)</li><li>Task names, to-dos, and goals</li><li>Focus session records (start time, end time, duration)</li><li>Focus and resistance ratings (self-rated, 1–9)</li><li>Notes you leave for yourself, reminders, and watch-outs (habits you tend to slip into, and how often you overcame them)</li></ul>
+<p><strong>Data that leaves your device</strong>:</p>
+<ul><li><strong>Sign-in data</strong> (only if you sign in with Apple or Google): an account identifier, and — unless you choose to hide it with Sign in with Apple — your email address and name provided by Apple or Google.</li><li><strong>Launch survey answers</strong> (only if you choose to fill in the survey), linked to your account identifier.</li><li><strong>Crash reports</strong>: if the App stops because of an error, the error location and device state at that moment (such as device model and OS version). They don't include your tasks, notes, or session records, and aren't linked to your account.</li><li><strong>Purchase data</strong>: purchase receipts and unlock status, linked to an app user identifier (your account identifier if you are signed in, otherwise a random identifier).</li></ul>
+<p>The App does not collect location data, does not analyze your usage behavior, does not use ad tracking, and contains no advertising or analytics SDK. Providing sign-in data and survey answers is optional; if you don't, you can still use the App without an account (you just can't join the survey campaign).</p>
+<h2>3. Why we use it (and legal basis)</h2>
+<ul><li>Sign-in data: to create and identify your account and show your sign-in status — needed to provide the account features you ask for (performance of a contract).</li><li>Survey answers: to improve Murmuration and to grant survey rewards — based on your consent, which you can withdraw at any time.</li><li>Crash reports: to find and fix errors — based on our legitimate interest in keeping the App working.</li><li>Purchase data: to process purchases and unlock the Full Version — performance of a contract.</li></ul>
+<h2>4. Who processes it for us</h2>
+<ul><li>Google LLC — Firebase Authentication (sign-in), Cloud Firestore (survey answers), Firebase Crashlytics (crash reports)</li><li>RevenueCat, Inc. — purchase processing and unlock status</li><li>Apple Inc. — Sign in with Apple and In-App Purchase</li></ul>
+<p>These providers process data on our behalf under their own terms and privacy policies. We do not sell your personal data and do not share it with anyone else, except where the law requires it.</p>
+<h2>5. International transfers</h2>
+<p>We are in Taiwan, and the providers above store and process data mainly in the United States. When you sign in, submit the survey, make a purchase, or the App crashes, the related data (listed in section 2) is sent over an encrypted connection to these providers' servers and kept for the periods in section 6. We rely on the providers' standard contractual data protection commitments for these transfers. If you don't want your data transferred, don't sign in or submit the survey; the App's core features keep working on your device.</p>
+<h2>6. How long we keep it</h2>
+<ul><li>Sign-in data and survey answers: until you delete your account. When you delete your account, we delete your survey answers and your sign-in account immediately.</li><li>Crash reports: kept by Firebase Crashlytics for a limited period set by Google, then deleted automatically.</li><li>Purchase data: kept by Apple and RevenueCat as needed for purchase records and legal obligations (for example, accounting).</li><li>Data on your device: stays until you delete it or delete the App. Deleting your account does not delete it.</li></ul>
+<h2>7. Your rights</h2>
+<p>Depending on where you live, you may have the right to: access your data, correct it, delete it, receive a copy (portability), object to or restrict its use, and withdraw your consent. To use any of these rights, email us at the address above; we will respond within the time required by the law that applies to you. You can also delete your account yourself in the App under Settings → Delete account.</p>
+<p>You also have the right to lodge a complaint with your local data protection authority (for example, Japan's Personal Information Protection Commission, Korea's Personal Information Protection Commission, or Switzerland's Federal Data Protection and Information Commissioner).</p>
+<h2>8. Security</h2>
+<p>Data sent from the App travels over encrypted connections. We do not run our own servers; cloud data is stored with the providers in section 4, access to your survey answers is limited to your own account and to us, and we keep the amount of data we collect to a minimum.</p>
+<h2>9. Children</h2>
+<p>The App is not designed specifically for children. If you are under 14 in Korea, or under the age of digital consent in your country (for example, 13 or 16), please don't sign in or submit the survey without your parent's or guardian's consent. If we learn we have collected such data without the required consent, we will delete it.</p>
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes significantly, we will let you know in the App before the change takes effect. Where the law requires your consent to a change, we will ask for it.</p>
+<h2>11. Contact us</h2>
+<p>Privacy questions or requests: <a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
+</section>
+<hr>
+<section id="ja" lang="ja">
 <p class="lang">日本語</p>
 <h1>Murmuration プライバシーポリシー</h1>
-<p class="updated">最終更新日：2026年8月</p>
-
-<p>Murmurationをご利用いただきありがとうございます。本ポリシーは、収集する情報、その利用方法、およびお客様の権利について説明します。</p>
-
-<h2>1. 収集する情報</h2>
-<p><strong>お客様が提供する情報</strong></p>
-<ul>
-  <li>ユーザー名（任意、アプリ内の挨拶表示にのみ使用）</li>
-  <li>タスク名、チェックリスト、長期目標</li>
-  <li>計測記録（開始・終了時刻、所要時間）</li>
-  <li>集中度・抵抗感（1〜9の自己評価）</li>
-  <li>自分へのメモ（TaskNote）、方法リマインダー（TaskReminder）、習慣記録（TaskHabit）</li>
-  <li><strong>ローンチアンケートの回答</strong>（お客様が自発的に記入した場合のみ）</li>
-</ul>
-<p><strong>自動収集する情報</strong></p>
-<ul>
-  <li><strong>クラッシュレポート</strong>：アプリが異常終了した際、エラーの発生箇所と端末の状態を Firebase Crashlytics に送信し、不具合の修正に使用します。<strong>このレポートにタスク・メモ・計測内容は含まれず、アカウント識別情報も付随しません。</strong></li>
-</ul>
-<p>上記を除き、本アプリは位置情報、行動分析データ、広告トラッキングを一切収集せず、広告・分析SDKも使用しません。</p>
-
-<h2>2. データの保存場所</h2>
-<p>データの種類により保存場所が異なります：</p>
-<ul>
-  <li><strong>タスク・チェックリスト・長期目標・計測記録・メモ・リマインダー・習慣記録</strong>：お客様の端末のローカル（SQLiteデータベース）に保存され、<strong>サーバーにアップロードされません</strong>。</li>
-  <li><strong>ローンチアンケートの回答</strong>：Google Cloud Firestore に保存され、アカウント識別子と紐付きます。<strong>お客様が自発的に記入・送信した場合のみアップロードされます。</strong></li>
-  <li><strong>クラッシュレポート</strong>：Firebase Crashlytics に送信され、アカウントとは紐付きません。</li>
-  <li><strong>購入・解除状態</strong>：Apple および RevenueCat が処理します。</li>
-</ul>
-
-<h2>3. サードパーティサービス</h2>
-<ul>
-  <li>Apple でサインイン / Google でログイン（Firebase Authenticationによるアカウント認証）：アカウント識別のみに使用します。</li>
-  <li>Apple アプリ内課金と RevenueCat（Pro購入時のみ）：購入情報と解除状態の処理に使用され、タスク内容には関与しません。</li>
-  <li>Google Cloud Firestore（ローンチアンケート記入時のみ）：アンケートの回答を保存し、Murmurationの改善に使用します。</li>
-  <li>Firebase Crashlytics（クラッシュレポート）：異常終了時のエラー情報を受信し、不具合の修正に使用します。アカウントとは紐付きません。</li>
-  <li>タスク・メモ・計測データは<strong>端末ローカルのみ</strong>に保存され、サーバーにアップロードされません。</li>
-</ul>
-<p>本アプリは広告を含まず、お客様の個人データを第三者に販売しません。</p>
-
-<h2>4. データの削除</h2>
-<p>アプリ内の「設定 → アカウント削除」から、いつでもアカウントを削除できます。<strong>アカウント削除時、Firestore に保存されたアンケートの回答も併せて削除されます。</strong></p>
-<p>タスク・メモ・計測記録は端末ローカルに保存されているため、<strong>アカウント削除では消えません</strong>。完全に削除するにはアプリをアンインストールしてください。</p>
-
-<h2>5. 未成年者について</h2>
-<p>本アプリは未成年者を対象としておらず、未成年者の個人データを意図的に収集しません。</p>
-
-<h2>6. ポリシーの変更</h2>
-<p>重要な変更がある場合は、アプリ内の通知でお知らせします。引き続きアプリをご利用いただくことで、更新されたポリシーへの同意とみなします。</p>
-
-<h2>7. お問い合わせ</h2>
-<p>プライバシーに関するご質問は、下記までご連絡ください：<a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
-
+<p class="updated">最終更新日：2026年9月</p>
+<p>Murmurationをご利用いただきありがとうございます。本ポリシーは、収集する情報、その目的、提供先、保存期間、およびお客様の権利について説明します。</p>
+<h2>1. 個人データの責任者</h2>
+<p>Murmurationは台湾の個人開発者 YuChin Chen が開発しており、お客様の個人データの取扱いについて責任を負うとともに、プライバシーに関する窓口を兼ねています。連絡先：<a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
+<h2>2. 収集する情報</h2>
+<p><strong>端末内にのみ保存される情報</strong>（当方は受け取りません）：</p>
+<ul><li>ユーザー名（任意、アプリ内の挨拶表示にのみ使用）</li><li>タスク名、チェックリスト、目標</li><li>計測記録（開始・終了時刻、所要時間）</li><li>集中度・抵抗感（1〜9の自己評価）</li><li>自分へのメモ、リマインダー、注意点（陥りやすい習慣と克服した回数）</li></ul>
+<p><strong>端末の外に送信される情報</strong>：</p>
+<ul><li><strong>ログイン情報</strong>（AppleまたはGoogleでログインした場合のみ）：アカウント識別子、およびAppleまたはGoogleから提供されるメールアドレスと氏名（Appleでサインインする場合はメールアドレスを非公開にできます）。</li><li><strong>ローンチアンケートの回答</strong>（お客様が任意で回答した場合のみ）。アカウント識別子と紐付きます。</li><li><strong>クラッシュレポート</strong>：アプリが異常終了した際のエラー発生箇所と端末の状態（機種、OSバージョンなど）。タスク・メモ・計測内容は含まれず、アカウントとも紐付きません。</li><li><strong>購入情報</strong>：購入レシートと解除状態。アプリのユーザー識別子（ログイン時はアカウント識別子、それ以外はランダムな識別子）と紐付きます。</li></ul>
+<p>本アプリは位置情報を収集せず、行動分析や広告トラッキングを行わず、広告・分析SDKも含みません。ログイン情報とアンケート回答の提供は任意であり、提供しなくてもアカウントなしで本アプリを利用できます（アンケートキャンペーンには参加できません）。</p>
+<h2>3. 利用目的と法的根拠</h2>
+<ul><li>ログイン情報：アカウントの作成・識別とログイン状態の表示。ご依頼のアカウント機能の提供に必要です（契約の履行）。</li><li>アンケート回答：Murmurationの改善と特典の付与。お客様の同意に基づき、いつでも撤回できます。</li><li>クラッシュレポート：エラーの発見と修正。アプリを正常に保つための正当な利益に基づきます。</li><li>購入情報：購入の処理とフル版の解除（契約の履行）。</li></ul>
+<h2>4. 委託先</h2>
+<ul><li>Google LLC — Firebase Authentication（ログイン）、Cloud Firestore（アンケート回答）、Firebase Crashlytics（クラッシュレポート）</li><li>RevenueCat, Inc. — 購入処理と解除状態</li><li>Apple Inc. — Appleでサインインおよびアプリ内課金</li></ul>
+<p>これらの事業者は、各社の規約とプライバシーポリシーに基づき当方に代わってデータを処理します。当方はお客様の個人データを販売せず、法令に基づく場合を除き第三者に提供しません。</p>
+<h2>5. 外国への移転</h2>
+<p>当方は台湾に所在し、上記の事業者は主に米国でデータを保存・処理します。ログイン、アンケート送信、購入、またはアプリのクラッシュ時に、関連する情報（第2条）が暗号化された通信でこれらの事業者のサーバーに送信され、第6条の期間保存されます。これらの移転は各事業者の標準的なデータ保護に関する契約上の約束に依拠しています。移転を望まない場合はログインやアンケート送信をしないでください。アプリのコア機能は端末上で引き続き動作します。</p>
+<h2>6. 保存期間</h2>
+<ul><li>ログイン情報とアンケート回答：アカウントを削除するまで。削除時にはアンケート回答とログインアカウントを直ちに削除します。</li><li>クラッシュレポート：Googleが定める一定期間 Firebase Crashlytics に保存され、その後自動的に削除されます。</li><li>購入情報：購入記録および法令上の義務（会計など）に必要な範囲でAppleとRevenueCatが保存します。</li><li>端末内のデータ：お客様が削除するかアプリをアンインストールするまで残ります。アカウント削除では削除されません。</li></ul>
+<h2>7. お客様の権利</h2>
+<p>お住まいの地域の法律に応じて、保有個人データの開示、訂正・追加・削除、利用停止・消去、第三者提供の停止、データの写しの受領、同意の撤回を請求できる場合があります。これらの請求は上記メールアドレスまでご連絡ください。適用される法律で定める期間内に対応します（手数料はいただきません）。アプリ内の「設定 → アカウント削除」からご自身で削除することもできます。</p>
+<p>お住まいの地域のデータ保護機関（例：日本の個人情報保護委員会）に苦情を申し立てることもできます。</p>
+<h2>8. 安全管理措置</h2>
+<p>アプリから送信されるデータは暗号化された通信で送られます。当方は独自のサーバーを運用しておらず、クラウド上のデータは第4条の事業者に保存されます。アンケート回答にアクセスできるのはお客様のアカウントと当方のみで、収集するデータは最小限にしています。</p>
+<h2>9. 未成年者について</h2>
+<p>本アプリは子ども向けに設計されたものではありません。韓国で14歳未満の方、またはお住まいの国のデジタル同意年齢（例：13歳または16歳）未満の方は、保護者の同意なしにログインやアンケート送信をしないでください。必要な同意なくこうした情報を収集したことが判明した場合は削除します。</p>
+<h2>10. ポリシーの変更</h2>
+<p>本ポリシーに重要な変更がある場合は、効力発生前にアプリ内でお知らせします。法律上お客様の同意が必要な変更については同意を求めます。</p>
+<h2>11. お問い合わせ</h2>
+<p>プライバシーに関するご質問・ご請求：<a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
+</section>
+<hr>
+<section id="fr" lang="fr">
+<p class="lang">Français</p>
+<h1>Politique de confidentialité de Murmuration</h1>
+<p class="updated">Dernière mise à jour : septembre 2026</p>
+<p>Merci d'utiliser Murmuration. Cette politique explique quelles données nous recueillons, pourquoi, où elles vont, combien de temps nous les conservons et quels sont vos droits.</p>
+<h2>1. Qui est responsable de vos données</h2>
+<p>Murmuration est développée par YuChin Chen, développeur indépendant établi à Taïwan, qui est responsable du traitement de vos renseignements personnels et également la personne responsable de leur protection. Contact : <a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a>.</p>
+<h2>2. Données que nous recueillons</h2>
+<p><strong>Données qui restent sur votre appareil</strong> (nous ne les recevons jamais) :</p>
+<ul><li>Un nom d'affichage (facultatif ; utilisé uniquement pour la salutation dans l'App)</li><li>Noms des tâches, listes et objectifs</li><li>Historique des séances de concentration (début, fin, durée)</li><li>Évaluations de concentration et de résistance (auto-évaluées, de 1 à 9)</li><li>Notes que vous vous laissez, rappels et points de vigilance (habitudes dans lesquelles vous tombez facilement, et combien de fois vous les avez surmontées)</li></ul>
+<p><strong>Données qui quittent votre appareil</strong> :</p>
+<ul><li><strong>Données de connexion</strong> (uniquement si vous vous connectez avec Apple ou Google) : un identifiant de compte et, sauf si vous choisissez de le masquer avec « Se connecter avec Apple », votre adresse courriel et votre nom fournis par Apple ou Google.</li><li><strong>Réponses au sondage de lancement</strong> (uniquement si vous choisissez d'y répondre), liées à votre identifiant de compte.</li><li><strong>Rapports de plantage</strong> : si l'App s'arrête à cause d'une erreur, l'emplacement de l'erreur et l'état de l'appareil à ce moment (modèle, version du système, etc.). Ils ne contiennent ni vos tâches, ni vos notes, ni vos séances, et ne sont pas liés à votre compte.</li><li><strong>Données d'achat</strong> : reçus d'achat et état de déverrouillage, liés à un identifiant d'utilisateur de l'App (votre identifiant de compte si vous êtes connecté, sinon un identifiant aléatoire).</li></ul>
+<p>L'App ne recueille pas de données de localisation, n'analyse pas votre comportement d'utilisation, n'utilise pas de suivi publicitaire et ne contient aucun SDK publicitaire ou analytique. Fournir des données de connexion et des réponses au sondage est facultatif ; sans cela, vous pouvez toujours utiliser l'App sans compte (vous ne pourrez simplement pas participer au sondage).</p>
+<h2>3. Pourquoi nous les utilisons (et fondement)</h2>
+<ul><li>Données de connexion : créer et identifier votre compte et afficher votre état de connexion — nécessaire pour fournir les fonctions de compte que vous demandez (exécution du contrat).</li><li>Réponses au sondage : améliorer Murmuration et accorder les récompenses — sur la base de votre consentement, que vous pouvez retirer à tout moment.</li><li>Rapports de plantage : trouver et corriger les erreurs — sur la base de notre intérêt légitime à assurer le bon fonctionnement de l'App.</li><li>Données d'achat : traiter les achats et débloquer la version complète — exécution du contrat.</li></ul>
+<h2>4. Qui les traite pour nous</h2>
+<ul><li>Google LLC — Firebase Authentication (connexion), Cloud Firestore (réponses au sondage), Firebase Crashlytics (rapports de plantage)</li><li>RevenueCat, Inc. — traitement des achats et état de déverrouillage</li><li>Apple Inc. — « Se connecter avec Apple » et achats intégrés</li></ul>
+<p>Ces fournisseurs traitent les données pour notre compte selon leurs propres conditions et politiques de confidentialité. Nous ne vendons pas vos renseignements personnels et ne les communiquons à personne d'autre, sauf si la loi l'exige.</p>
+<h2>5. Transferts à l'extérieur</h2>
+<p>Nous sommes à Taïwan, et les fournisseurs ci-dessus conservent et traitent les données principalement aux États-Unis. Lorsque vous vous connectez, envoyez le sondage, effectuez un achat ou que l'App plante, les données concernées (section 2) sont envoyées par une connexion chiffrée aux serveurs de ces fournisseurs et conservées pendant les durées indiquées à la section 6. Nous nous appuyons sur les engagements contractuels standard de protection des données de ces fournisseurs. Si vous ne souhaitez pas ce transfert, ne vous connectez pas et n'envoyez pas le sondage ; les fonctions essentielles de l'App continuent de fonctionner sur votre appareil.</p>
+<h2>6. Durée de conservation</h2>
+<ul><li>Données de connexion et réponses au sondage : jusqu'à la suppression de votre compte. À la suppression, nous supprimons immédiatement vos réponses au sondage et votre compte de connexion.</li><li>Rapports de plantage : conservés par Firebase Crashlytics pendant une durée limitée fixée par Google, puis supprimés automatiquement.</li><li>Données d'achat : conservées par Apple et RevenueCat selon les besoins des registres d'achat et des obligations légales (par exemple comptables).</li><li>Données sur votre appareil : conservées jusqu'à ce que vous les supprimiez ou supprimiez l'App ; la suppression du compte ne les efface pas.</li></ul>
+<h2>7. Vos droits</h2>
+<p>Selon votre lieu de résidence, vous pouvez avoir le droit d'accéder à vos données, de les faire rectifier ou supprimer, d'en obtenir une copie (portabilité), de vous opposer à leur utilisation ou de la limiter, et de retirer votre consentement. Pour exercer ces droits, écrivez-nous à l'adresse ci-dessus ; nous répondrons dans le délai prévu par la loi qui s'applique à vous. Vous pouvez aussi supprimer votre compte vous-même dans l'App via Réglages → Supprimer le compte.</p>
+<p>Vous avez aussi le droit de déposer une plainte auprès de l'autorité de protection des données de votre lieu de résidence (par exemple la Commission d'accès à l'information du Québec).</p>
+<h2>8. Sécurité</h2>
+<p>Les données envoyées par l'App passent par des connexions chiffrées. Nous n'exploitons pas nos propres serveurs ; les données infonuagiques sont conservées chez les fournisseurs de la section 4, l'accès à vos réponses au sondage est limité à votre propre compte et à nous, et nous limitons au minimum les données recueillies.</p>
+<h2>9. Enfants</h2>
+<p>L'App n'est pas conçue spécialement pour les enfants. Si vous avez moins de 14 ans au Québec ou en Corée, ou moins que l'âge du consentement numérique dans votre pays (par exemple 13 ou 16 ans), ne vous connectez pas et n'envoyez pas le sondage sans le consentement de votre parent ou tuteur. Si nous apprenons que nous avons recueilli de telles données sans le consentement requis, nous les supprimerons.</p>
+<h2>10. Modifications de cette politique</h2>
+<p>Si cette politique change de façon importante, nous vous en informerons dans l'App avant l'entrée en vigueur du changement. Lorsque la loi exige votre consentement à un changement, nous vous le demanderons.</p>
+<h2>11. Nous joindre</h2>
+<p>Questions ou demandes concernant la confidentialité : <a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
+</section>
+<hr>
+<section id="ko" lang="ko">
+<p class="lang">한국어</p>
+<h1>Murmuration 개인정보 처리방침</h1>
+<p class="updated">최종 업데이트: 2026년 9월</p>
+<p>Murmuration을 이용해 주셔서 감사합니다. 본 방침은 어떤 개인정보를 왜 처리하고, 어디로 보내며, 얼마나 보관하는지, 그리고 이용자의 권리를 설명합니다.</p>
+<h2>1. 개인정보 처리자 및 개인정보 보호책임자</h2>
+<p>Murmuration은 대만의 개인 개발자 YuChin Chen가 개발하며, 개인정보 처리자이자 개인정보 보호책임자입니다. 연락처: <a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
+<h2>2. 처리하는 개인정보 항목</h2>
+<p><strong>기기에만 저장되는 정보</strong>(당사는 받지 않습니다):</p>
+<ul><li>표시 이름(선택, 앱 내 인사말 표시에만 사용)</li><li>할 일 이름, 체크리스트, 목표</li><li>집중 기록(시작·종료 시각, 소요 시간)</li><li>집중도·저항감(1~9 자기 평가)</li><li>자신에게 남긴 메모, 리마인더, 주의할 점(빠지기 쉬운 습관과 극복한 횟수)</li></ul>
+<p><strong>기기 밖으로 전송되는 정보</strong>:</p>
+<ul><li><strong>로그인 정보</strong>(Apple 또는 Google로 로그인한 경우에만): 계정 식별자, 그리고 Apple 또는 Google이 제공하는 이메일 주소와 이름(Apple로 로그인 시 이메일 가리기 선택 가능).</li><li><strong>출시 설문 응답</strong>(이용자가 선택하여 응답한 경우에만), 계정 식별자와 연결됩니다.</li><li><strong>충돌 보고서</strong>: 오류로 앱이 종료될 때 오류 위치와 당시 기기 상태(기종, OS 버전 등). 할 일·메모·집중 기록은 포함되지 않으며 계정과 연결되지 않습니다.</li><li><strong>구매 정보</strong>: 구매 영수증과 잠금 해제 상태, 앱 사용자 식별자(로그인 시 계정 식별자, 그 외에는 무작위 식별자)와 연결됩니다.</li></ul>
+<p>앱은 위치 정보를 수집하지 않고, 이용 행태를 분석하지 않으며, 광고 추적을 하지 않고, 광고·분석 SDK를 포함하지 않습니다. 로그인 정보와 설문 응답 제공은 선택 사항이며, 제공을 거부하더라도 계정 없이 앱을 이용할 수 있습니다(설문 캠페인에는 참여할 수 없습니다).</p>
+<h2>3. 처리 목적 및 근거</h2>
+<ul><li>로그인 정보: 계정 생성·식별 및 로그인 상태 표시 — 이용자가 요청한 계정 기능 제공에 필요(계약의 이행).</li><li>설문 응답: Murmuration 개선 및 리워드 지급 — 이용자의 동의에 근거하며 언제든지 철회할 수 있습니다.</li><li>충돌 보고서: 오류 발견 및 수정 — 앱을 정상적으로 유지하기 위한 정당한 이익.</li><li>구매 정보: 구매 처리 및 정식 버전 잠금 해제(계약의 이행).</li></ul>
+<h2>4. 개인정보 처리 위탁</h2>
+<ul><li>Google LLC — Firebase Authentication(로그인), Cloud Firestore(설문 응답), Firebase Crashlytics(충돌 보고서)</li><li>RevenueCat, Inc. — 구매 처리 및 잠금 해제 상태</li><li>Apple Inc. — Apple로 로그인 및 앱 내 구입</li></ul>
+<p>위 수탁자는 각 사의 약관과 개인정보 처리방침에 따라 당사를 대신하여 정보를 처리합니다. 당사는 개인정보를 판매하지 않으며, 법령에 따른 경우를 제외하고 제3자에게 제공하지 않습니다.</p>
+<h2>5. 개인정보의 국외 이전</h2>
+<p>당사는 대만에 있으며, 위 수탁자는 주로 미국에서 정보를 저장·처리합니다. 이전되는 항목: 제2조의 기기 밖으로 전송되는 정보 / 이전 국가: 미국(및 대만) / 이전받는 자: Google LLC, RevenueCat, Inc., Apple Inc. / 이전 시기와 방법: 로그인, 설문 제출, 구매 또는 앱 충돌 시 암호화된 통신으로 전송 / 목적 및 보유 기간: 제3조·제6조와 같습니다. 이 이전은 각 수탁자의 표준 데이터 보호 계약상 약정에 근거합니다. 국외 이전을 원하지 않으면 로그인하거나 설문을 제출하지 않을 수 있으며, 이 경우에도 앱의 핵심 기능은 기기에서 계속 작동합니다(설문 캠페인 참여만 제한됩니다).</p>
+<h2>6. 보유 기간 및 파기</h2>
+<ul><li>로그인 정보와 설문 응답: 계정을 삭제할 때까지. 계정 삭제 시 설문 응답과 로그인 계정을 지체 없이 파기합니다(전자적 파일은 복구할 수 없는 방법으로 삭제).</li><li>충돌 보고서: Google이 정한 일정 기간 동안 Firebase Crashlytics에 보관된 후 자동 삭제됩니다.</li><li>구매 정보: 구매 기록 및 법령상 의무(회계 등)에 필요한 범위에서 Apple과 RevenueCat이 보관합니다.</li><li>기기 내 정보: 이용자가 삭제하거나 앱을 삭제할 때까지 남으며, 계정 삭제로는 삭제되지 않습니다.</li></ul>
+<h2>7. 이용자의 권리와 행사 방법</h2>
+<p>이용자는 개인정보의 열람, 정정·삭제, 처리정지, 전송 요구 및 동의 철회를 요구할 수 있습니다. 위 이메일로 요청하시면 관련 법령에서 정한 기간 내에 조치합니다. 앱의 "설정 → 계정 삭제"에서 직접 삭제할 수도 있습니다.</p>
+<p>개인정보 침해에 대해서는 개인정보보호위원회, 개인정보침해신고센터(국번 없이 118) 등에 신고하거나 상담할 수 있습니다.</p>
+<h2>8. 안전성 확보 조치</h2>
+<p>앱에서 전송되는 정보는 암호화된 통신으로 전송됩니다. 당사는 자체 서버를 운영하지 않으며, 클라우드 정보는 제4조의 수탁자에 보관됩니다. 설문 응답은 이용자 본인의 계정과 당사만 접근할 수 있고, 수집하는 정보는 최소한으로 합니다.</p>
+<h2>9. 아동의 개인정보</h2>
+<p>앱은 아동을 대상으로 설계되지 않았습니다. 만 14세 미만인 경우 법정대리인의 동의 없이 로그인하거나 설문을 제출하지 마세요. 필요한 동의 없이 이러한 정보를 수집한 사실을 알게 되면 삭제합니다.</p>
+<h2>10. 방침의 변경</h2>
+<p>본 방침이 중요하게 변경되는 경우 시행 전에 앱에서 알립니다. 법령상 이용자의 동의가 필요한 변경은 동의를 받습니다.</p>
+<h2>11. 문의</h2>
+<p>개인정보 관련 문의 및 요청: <a href="mailto:murmuration46@gmail.com">murmuration46@gmail.com</a></p>
+</section>
 </body>
 </html>
